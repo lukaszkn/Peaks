@@ -7,8 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2F14E192BEAAEBF00DF5698 /* poland-peaks.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F14E182BEAAEBF00DF5698 /* poland-peaks.json */; };
+		B2F14E1B2BEAAECA00DF5698 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E1A2BEAAECA00DF5698 /* Import.swift */; };
+		B2F14E252BEAAEF300DF5698 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E1C2BEAAEF300DF5698 /* MapDataSource.swift */; };
+		B2F14E262BEAAEF300DF5698 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E1D2BEAAEF300DF5698 /* MapViewModel.swift */; };
+		B2F14E282BEAAEF300DF5698 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E202BEAAEF300DF5698 /* MapView.swift */; };
+		B2F14E292BEAAEF300DF5698 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E222BEAAEF300DF5698 /* MainContentView.swift */; };
+		B2F14E2A2BEAAEF300DF5698 /* MapTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E232BEAAEF300DF5698 /* MapTabView.swift */; };
+		B2F14E2D2BEAAF1000DF5698 /* LocalDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E2C2BEAAF1000DF5698 /* LocalDbService.swift */; };
+		B2F14E302BEAAF2800DF5698 /* Peak.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E2F2BEAAF2800DF5698 /* Peak.swift */; };
+		B2F14E3A2BEAAF3300DF5698 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E312BEAAF3300DF5698 /* Bundle+Extensions.swift */; };
+		B2F14E3B2BEAAF3300DF5698 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E322BEAAF3300DF5698 /* Color+Extensions.swift */; };
+		B2F14E3C2BEAAF3300DF5698 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E332BEAAF3300DF5698 /* Date+Extensions.swift */; };
+		B2F14E3D2BEAAF3300DF5698 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E342BEAAF3300DF5698 /* Double+Extensions.swift */; };
+		B2F14E3E2BEAAF3300DF5698 /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E352BEAAF3300DF5698 /* Location+Extensions.swift */; };
+		B2F14E3F2BEAAF3300DF5698 /* NestedObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E362BEAAF3300DF5698 /* NestedObservableObject.swift */; };
+		B2F14E402BEAAF3300DF5698 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E372BEAAF3300DF5698 /* Notification+Extensions.swift */; };
+		B2F14E412BEAAF3300DF5698 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E382BEAAF3300DF5698 /* UserDefaults+Extensions.swift */; };
+		B2F14E442BEAAF5E00DF5698 /* ClusterMap in Frameworks */ = {isa = PBXBuildFile; productRef = B2F14E432BEAAF5E00DF5698 /* ClusterMap */; };
+		B2F14E462BEAAF5E00DF5698 /* ClusterMapSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B2F14E452BEAAF5E00DF5698 /* ClusterMapSwiftUI */; };
+		B2F14E492BEAAF7900DF5698 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B2F14E482BEAAF7900DF5698 /* SQLite */; };
+		B2F14E4C2BEAAFA600DF5698 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = B2F14E4B2BEAAFA600DF5698 /* Swinject */; };
 		B2FDC6682BEA8613006E6011 /* PeaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FDC6672BEA8613006E6011 /* PeaksApp.swift */; };
-		B2FDC66A2BEA8613006E6011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FDC6692BEA8613006E6011 /* ContentView.swift */; };
 		B2FDC66C2BEA8614006E6011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FDC66B2BEA8614006E6011 /* Assets.xcassets */; };
 		B2FDC66F2BEA8614006E6011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FDC66E2BEA8614006E6011 /* Preview Assets.xcassets */; };
 		B2FDC6792BEA8614006E6011 /* PeaksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FDC6782BEA8614006E6011 /* PeaksTests.swift */; };
@@ -34,9 +54,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2F14E182BEAAEBF00DF5698 /* poland-peaks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "poland-peaks.json"; sourceTree = "<group>"; };
+		B2F14E1A2BEAAECA00DF5698 /* Import.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
+		B2F14E1C2BEAAEF300DF5698 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
+		B2F14E1D2BEAAEF300DF5698 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		B2F14E202BEAAEF300DF5698 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B2F14E222BEAAEF300DF5698 /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		B2F14E232BEAAEF300DF5698 /* MapTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
+		B2F14E2C2BEAAF1000DF5698 /* LocalDbService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDbService.swift; sourceTree = "<group>"; };
+		B2F14E2F2BEAAF2800DF5698 /* Peak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peak.swift; sourceTree = "<group>"; };
+		B2F14E312BEAAF3300DF5698 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		B2F14E322BEAAF3300DF5698 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		B2F14E332BEAAF3300DF5698 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B2F14E342BEAAF3300DF5698 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		B2F14E352BEAAF3300DF5698 /* Location+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+Extensions.swift"; sourceTree = "<group>"; };
+		B2F14E362BEAAF3300DF5698 /* NestedObservableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedObservableObject.swift; sourceTree = "<group>"; };
+		B2F14E372BEAAF3300DF5698 /* Notification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		B2F14E382BEAAF3300DF5698 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		B2FDC6642BEA8613006E6011 /* Peaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FDC6672BEA8613006E6011 /* PeaksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaksApp.swift; sourceTree = "<group>"; };
-		B2FDC6692BEA8613006E6011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2FDC66B2BEA8614006E6011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2FDC66E2BEA8614006E6011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2FDC6742BEA8614006E6011 /* PeaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F14E492BEAAF7900DF5698 /* SQLite in Frameworks */,
+				B2F14E462BEAAF5E00DF5698 /* ClusterMapSwiftUI in Frameworks */,
+				B2F14E442BEAAF5E00DF5698 /* ClusterMap in Frameworks */,
+				B2F14E4C2BEAAFA600DF5698 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +111,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B296518E2BEAAE5B00F58BC7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E182BEAAEBF00DF5698 /* poland-peaks.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B2F14E1E2BEAAEF300DF5698 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E1C2BEAAEF300DF5698 /* MapDataSource.swift */,
+				B2F14E1D2BEAAEF300DF5698 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2F14E212BEAAEF300DF5698 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E202BEAAEF300DF5698 /* MapView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		B2F14E242BEAAEF300DF5698 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E212BEAAEF300DF5698 /* Controls */,
+				B2F14E222BEAAEF300DF5698 /* MainContentView.swift */,
+				B2F14E232BEAAEF300DF5698 /* MapTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2F14E2B2BEAAF0800DF5698 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E2C2BEAAF1000DF5698 /* LocalDbService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B2F14E2E2BEAAF2000DF5698 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E2F2BEAAF2800DF5698 /* Peak.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2F14E392BEAAF3300DF5698 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2F14E312BEAAF3300DF5698 /* Bundle+Extensions.swift */,
+				B2F14E322BEAAF3300DF5698 /* Color+Extensions.swift */,
+				B2F14E332BEAAF3300DF5698 /* Date+Extensions.swift */,
+				B2F14E342BEAAF3300DF5698 /* Double+Extensions.swift */,
+				B2F14E352BEAAF3300DF5698 /* Location+Extensions.swift */,
+				B2F14E362BEAAF3300DF5698 /* NestedObservableObject.swift */,
+				B2F14E372BEAAF3300DF5698 /* Notification+Extensions.swift */,
+				B2F14E382BEAAF3300DF5698 /* UserDefaults+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B2FDC65B2BEA8613006E6011 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +200,13 @@
 		B2FDC6662BEA8613006E6011 /* Peaks */ = {
 			isa = PBXGroup;
 			children = (
+				B2F14E392BEAAF3300DF5698 /* Extensions */,
+				B2F14E2E2BEAAF2000DF5698 /* Model */,
+				B2F14E2B2BEAAF0800DF5698 /* Service */,
 				B2FDC6672BEA8613006E6011 /* PeaksApp.swift */,
-				B2FDC6692BEA8613006E6011 /* ContentView.swift */,
 				B2FDC66B2BEA8614006E6011 /* Assets.xcassets */,
+				B2F14E242BEAAEF300DF5698 /* View */,
+				B2F14E1E2BEAAEF300DF5698 /* ViewModel */,
 				B2FDC66D2BEA8614006E6011 /* Preview Content */,
 			);
 			path = Peaks;
@@ -113,6 +223,8 @@
 		B2FDC6772BEA8614006E6011 /* PeaksTests */ = {
 			isa = PBXGroup;
 			children = (
+				B296518E2BEAAE5B00F58BC7 /* Data */,
+				B2F14E1A2BEAAECA00DF5698 /* Import.swift */,
 				B2FDC6782BEA8614006E6011 /* PeaksTests.swift */,
 			);
 			path = PeaksTests;
@@ -143,6 +255,12 @@
 			dependencies = (
 			);
 			name = Peaks;
+			packageProductDependencies = (
+				B2F14E432BEAAF5E00DF5698 /* ClusterMap */,
+				B2F14E452BEAAF5E00DF5698 /* ClusterMapSwiftUI */,
+				B2F14E482BEAAF7900DF5698 /* SQLite */,
+				B2F14E4B2BEAAFA600DF5698 /* Swinject */,
+			);
 			productName = Peaks;
 			productReference = B2FDC6642BEA8613006E6011 /* Peaks.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +333,11 @@
 				Base,
 			);
 			mainGroup = B2FDC65B2BEA8613006E6011;
+			packageReferences = (
+				B2F14E422BEAAF5E00DF5698 /* XCRemoteSwiftPackageReference "ClusterMap" */,
+				B2F14E472BEAAF7900DF5698 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				B2F14E4A2BEAAFA600DF5698 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = B2FDC6652BEA8613006E6011 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F14E192BEAAEBF00DF5698 /* poland-peaks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +381,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FDC66A2BEA8613006E6011 /* ContentView.swift in Sources */,
+				B2F14E282BEAAEF300DF5698 /* MapView.swift in Sources */,
+				B2F14E3D2BEAAF3300DF5698 /* Double+Extensions.swift in Sources */,
+				B2F14E3A2BEAAF3300DF5698 /* Bundle+Extensions.swift in Sources */,
+				B2F14E402BEAAF3300DF5698 /* Notification+Extensions.swift in Sources */,
+				B2F14E3C2BEAAF3300DF5698 /* Date+Extensions.swift in Sources */,
+				B2F14E2D2BEAAF1000DF5698 /* LocalDbService.swift in Sources */,
+				B2F14E3F2BEAAF3300DF5698 /* NestedObservableObject.swift in Sources */,
+				B2F14E252BEAAEF300DF5698 /* MapDataSource.swift in Sources */,
+				B2F14E302BEAAF2800DF5698 /* Peak.swift in Sources */,
+				B2F14E412BEAAF3300DF5698 /* UserDefaults+Extensions.swift in Sources */,
+				B2F14E3E2BEAAF3300DF5698 /* Location+Extensions.swift in Sources */,
+				B2F14E2A2BEAAEF300DF5698 /* MapTabView.swift in Sources */,
 				B2FDC6682BEA8613006E6011 /* PeaksApp.swift in Sources */,
+				B2F14E262BEAAEF300DF5698 /* MapViewModel.swift in Sources */,
+				B2F14E292BEAAEF300DF5698 /* MainContentView.swift in Sources */,
+				B2F14E3B2BEAAF3300DF5698 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F14E1B2BEAAECA00DF5698 /* Import.swift in Sources */,
 				B2FDC6792BEA8614006E6011 /* PeaksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +727,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2F14E422BEAAF5E00DF5698 /* XCRemoteSwiftPackageReference "ClusterMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaszkn/ClusterMap";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		B2F14E472BEAAF7900DF5698 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		B2F14E4A2BEAAFA600DF5698 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2F14E432BEAAF5E00DF5698 /* ClusterMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F14E422BEAAF5E00DF5698 /* XCRemoteSwiftPackageReference "ClusterMap" */;
+			productName = ClusterMap;
+		};
+		B2F14E452BEAAF5E00DF5698 /* ClusterMapSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F14E422BEAAF5E00DF5698 /* XCRemoteSwiftPackageReference "ClusterMap" */;
+			productName = ClusterMapSwiftUI;
+		};
+		B2F14E482BEAAF7900DF5698 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F14E472BEAAF7900DF5698 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		B2F14E4B2BEAAFA600DF5698 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F14E4A2BEAAFA600DF5698 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2FDC65C2BEA8613006E6011 /* Project object */;
 }
