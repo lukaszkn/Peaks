@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "196A1AF7-95FC-4781-A07C-75DC695482AF",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Peaks.xcodeproj",
+      "identifier" : "B2FDC6632BEA8613006E6011",
+      "name" : "Peaks"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Peaks.xcodeproj",
+        "identifier" : "B2FDC6732BEA8614006E6011",
+        "name" : "PeaksTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Peaks.xcodeproj",
+        "identifier" : "B2FDC67D2BEA8614006E6011",
+        "name" : "PeaksUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

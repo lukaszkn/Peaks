@@ -13,9 +13,27 @@ struct MapView: View {
     var dataSource: MapDataSource
     
     var body: some View {
-        Map(interactionModes: .all) {
+        Map(initialPosition: .region(dataSource.currentRegion),
+            interactionModes: .all) {
             ForEach(dataSource.peaks) { peak in
-                Marker(peak.name, coordinate: peak.coordinate)
+                Marker(peak.name, systemImage: "mountain.2.fill", coordinate: peak.coordinate)
+            }
+            
+            // peaks clusters
+            ForEach(dataSource.peakClusters) { cluster in
+                Annotation(coordinate: cluster.coordinate) {
+                    ZStack {
+                        Circle()
+                            .foregroundStyle(.green)
+                            .frame(width: 30, height: 30)
+
+                        Text("\(cluster.count)")
+                            .font(.footnote)
+                    }
+                } label: {
+                    EmptyView()
+                }
+                .annotationTitles(.hidden)
             }
             
             ForEach(dataSource.hikingPolylines, id: \.self) { track in

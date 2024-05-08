@@ -22,9 +22,9 @@ class LocalDbService {
             let peakId = Expression<Int64>("id")
             let peakName = Expression<String>("name")
             let peakIntName = Expression<String>("int_name")
-            let peakLatitude = Expression<Int>("lat")
-            let peakLongitude = Expression<Int>("lng")
-            let peakEle = Expression<Int>("ele")
+            let peakLatitude = Expression<Double>("lat")
+            let peakLongitude = Expression<Double>("lng")
+            let peakEle = Expression<Double>("ele")
             let peakWikidata = Expression<String>("wikidata")
             let peakWikipedia = Expression<String>("wikipedia")
             
@@ -32,8 +32,8 @@ class LocalDbService {
             
             for peakRow in try db.prepare(peaksQuery) {
                 peaks.append(Peak(id: peakRow[peakId], name: peakRow[peakName], int_name: peakRow[peakIntName],
-                                  longitude: Float(peakRow[peakLongitude]) / 10000.0, latitude: Float(peakRow[peakLatitude]) / 10000.0,
-                                  ele: Float(peakRow[peakEle]) / 10000.0,
+                                  longitude: Float(peakRow[peakLongitude]), latitude: Float(peakRow[peakLatitude]),
+                                  ele: Float(peakRow[peakEle]),
                                   wikidata: peakRow[peakWikidata], wikipedia: peakRow[peakWikipedia]))
             }
             

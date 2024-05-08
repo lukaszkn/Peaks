@@ -6,21 +6,18 @@
 //
 
 import Foundation
+import _MapKit_SwiftUI
 
 @Observable class MapViewModel {
+    var position: MapCameraPosition = .userLocation(fallback: .automatic)
     var mapDataSource = MapDataSource()
     
     func onAppear() {
-//        Task {
-//            var db = LocalDbService()
-//            let peaks = await db.getPeaks()
-//            
-//            _ = await MainActor.run {
-//                Task {
-//                    await self.mapDataSource.addPeaks(peaks)
-//                }
-//            }
-//            
-//        }
+        Task {
+            let db = LocalDbService()
+            let peaks = await db.getPeaks()
+            
+            await self.mapDataSource.addPeaks(peaks)
+        }
     }
 }

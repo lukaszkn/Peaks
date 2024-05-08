@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20066142BEAB6A2008DA8EF /* peaks-poland.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = B20066132BEAB6A2008DA8EF /* peaks-poland.sqlite3 */; };
 		B2F14E192BEAAEBF00DF5698 /* poland-peaks.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F14E182BEAAEBF00DF5698 /* poland-peaks.json */; };
 		B2F14E1B2BEAAECA00DF5698 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E1A2BEAAECA00DF5698 /* Import.swift */; };
 		B2F14E252BEAAEF300DF5698 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F14E1C2BEAAEF300DF5698 /* MapDataSource.swift */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B20066122BEAB629008DA8EF /* Peaks.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Peaks.xctestplan; sourceTree = "<group>"; };
+		B20066132BEAB6A2008DA8EF /* peaks-poland.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "peaks-poland.sqlite3"; sourceTree = "<group>"; };
 		B2F14E182BEAAEBF00DF5698 /* poland-peaks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "poland-peaks.json"; sourceTree = "<group>"; };
 		B2F14E1A2BEAAECA00DF5698 /* Import.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
 		B2F14E1C2BEAAEF300DF5698 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
@@ -177,9 +180,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B2F14E4D2BEAB45600DF5698 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B20066132BEAB6A2008DA8EF /* peaks-poland.sqlite3 */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B2FDC65B2BEA8613006E6011 = {
 			isa = PBXGroup;
 			children = (
+				B20066122BEAB629008DA8EF /* Peaks.xctestplan */,
 				B2FDC6662BEA8613006E6011 /* Peaks */,
 				B2FDC6772BEA8614006E6011 /* PeaksTests */,
 				B2FDC6812BEA8614006E6011 /* PeaksUITests */,
@@ -200,6 +212,7 @@
 		B2FDC6662BEA8613006E6011 /* Peaks */ = {
 			isa = PBXGroup;
 			children = (
+				B2F14E4D2BEAB45600DF5698 /* Data */,
 				B2F14E392BEAAF3300DF5698 /* Extensions */,
 				B2F14E2E2BEAAF2000DF5698 /* Model */,
 				B2F14E2B2BEAAF0800DF5698 /* Service */,
@@ -355,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2FDC66F2BEA8614006E6011 /* Preview Assets.xcassets in Resources */,
+				B20066142BEAB6A2008DA8EF /* peaks-poland.sqlite3 in Resources */,
 				B2FDC66C2BEA8614006E6011 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
